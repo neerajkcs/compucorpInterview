@@ -1,0 +1,16 @@
+name = Open Charity
+description = Open charity is an organisation that hosts events in London about open source software and solution for charities.
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[banner] = Banner
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[highlighted] = Highlighted
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[footer] = Footer
+
+stylesheets[all][] = assets/css/style.css
