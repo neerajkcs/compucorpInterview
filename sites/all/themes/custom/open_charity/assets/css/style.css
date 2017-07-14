@@ -444,3 +444,72 @@ a#logo {
     font-size: 17px;
     margin: 5px 0 15px;
 }
+
+.view-members {
+	padding-bottom: 25px;
+}
+
+.view-members .block-title{
+	border-top: #dedfe3 1px solid;
+    padding-top: 45px;
+    margin-bottom: 20px;
+}
+
+.view-members .owl-item > div {
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.view-members .owl-item .member-image {
+    height: 110px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.view-blog .owl-item {
+	padding: 0 15.5px;
+}
+
+.view-blog .owl-controls .owl-buttons .owl-prev,
+.view-blog .owl-controls .owl-buttons .owl-next {
+	margin: 0;
+	width: 17px;
+	height: 28px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.view-blog .owl-controls .owl-buttons .owl-prev {
+	background: url(../../images/lr-arrows.png) no-repeat top left;
+	left: -20px;
+}
+
+.view-blog .owl-controls .owl-buttons .owl-next {
+	background: url(../../images/lr-arrows.png) no-repeat bottom left;
+	right: -20px;
+}
+
+.view-blog .owl-item .views-field-body {
+	float: left;
+    width: 100%;
+    border-top: #f2f3f6 1px solid;
+    border-bottom: #f2f3f6 1px solid;
+    margin: 10px 0 15px;
+    padding: 5px 0 10px;
+}
+
+.view-blog .owl-item .views-field-title {
+	font-weight: bold;
+}
+
+.view-blog .owl-item .views-field-title a {
+	color: #61c0bd;
+}
+
+.view-blog .owl-controls.clickable .owl-buttons .disabled,
+.view-blog .owl-controls.clickable .owl-buttons .disabled:hover {
+    opacity: 0.2;
+    cursor: default;
+}
