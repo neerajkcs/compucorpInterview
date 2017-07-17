@@ -1,0 +1,104 @@
+/*! _layout.scss */
+
+.grid-container {
+	margin: 0 auto;
+	max-width: 1171px;
+	width: 100%;
+	padding: 0 15.5px;
+}
+
+.grid-container:after,
+.row:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.row {
+	margin: 0 -15.5px;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 0 15.5px;
+}
+
+.col-1 {
+	width: 8.33333333333%;
+}
+
+.col-2 {
+	width: 16.6666666667%;
+}
+
+.col-3 {
+	width: 25.0%;
+}
+
+.col-4 {
+	width: 33.3333333333%;
+}
+
+.col-5 {
+	width: 41.6666666667%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.3333333333%;
+}
+
+.col-8 {
+	width: 66.6666666667%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.3333333333%;
+}
+
+.col-11 {
+	width: 91.6666666667%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+#header {
+	padding: 20px 0;
+	display: table;
+	width: 100%;
+}
+
+#navigation {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.region-header {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#footer {
+	background: #444850;
+	color: #979eb1;
+	padding: 5px 0;
+	text-align: center;
+}

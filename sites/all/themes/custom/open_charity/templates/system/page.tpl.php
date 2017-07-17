@@ -75,9 +75,9 @@
 
   <div id="page-wrapper"><div id="page">
 
-    <div id="header"><div class="grid-container">
+    <header id="header"><div class="grid-container">
       <div class="row">
-        <div class="branding col-6">
+        <div class="branding col-4">
           <?php if ($logo): ?>
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
               <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -104,31 +104,30 @@
             </div> <!-- /#name-and-slogan -->
           <?php endif; ?>
         </div>
-        <div class="header__right col-6">
+        <div class="header__right col-8">
           <?php if ($main_menu || $secondary_menu): ?>
-            <div id="navigation"><div class="section">
+            <nav id="navigation"><div class="section">
               <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links')))); ?>
               <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links')))); ?>
-            </div></div> <!-- /.section, /#navigation -->
+            </div></nav> <!-- /.section, /#navigation -->
           <?php endif; ?>  
           <?php print render($page['header']); ?>
         </div>
       </div>
-    </div></div> <!-- /.container, /#header -->
+    </div></header> <!-- /.container, /#header -->
 
-    <?php if ($page['banner']): ?><div id="banner"><?php print render($page['banner']); ?></div><?php endif; ?>
-
+    <?php if ($page['banner']): ?><section id="banner"><?php print render($page['banner']); ?></section><?php endif; ?>
+	<div class="grid-container">
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?content_top print $breadcrumb; ?></div>
+      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
-
     <?php print $messages; ?>
-
-    <div id="main-wrapper"><div id="main" class="clearfix">
+	</div>
+    <main id="main" class="clearfix">
     <?php if ($page['content_top']): ?><div id="content-top"><?php print render($page['content_top']); ?></div><?php endif; ?>
       <div class="grid-container">
         <div class="row">
-          <div id="content" <?php print $content_column_class; ?>><div class="section">
+          <section id="content" <?php print $content_column_class; ?>><div class="section">
             <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
             <a id="main-content"></a>
             <?php print render($title_prefix); ?>
@@ -139,28 +138,28 @@
             <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
             <?php print render($page['content']); ?>
             <?php print $feed_icons; ?>
-          </div></div> <!-- /.section, /#content -->
+          </div></section> <!-- /.section, /#content -->
 
           <?php if ($page['sidebar_first']): ?>
-            <div id="sidebar-first" class="col-3 sidebar"><div class="section">
+            <aside id="sidebar-first" class="col-3 sidebar"><div class="section">
               <?php print render($page['sidebar_first']); ?>
-            </div></div> <!-- /.section, /#sidebar-first -->
+            </div></aside> <!-- /.section, /#sidebar-first -->
           <?php endif; ?>
 
           <?php if ($page['sidebar_second']): ?>
-            <div id="sidebar-second" class="col-3 sidebar"><div class="section">
+            <aside id="sidebar-second" class="col-3 sidebar"><div class="section">
               <?php print render($page['sidebar_second']); ?>
-            </div></div> <!-- /.section, /#sidebar-second -->
+            </div></aside> <!-- /.section, /#sidebar-second -->
           <?php endif; ?>
         </div>
       </div>
       <?php if ($page['content_bottom']): ?><div id="content-bottom"><?php print render($page['content_bottom']); ?></div><?php endif; ?>
-    </div></div> <!-- /#main, /#main-wrapper -->
+    </main> <!-- /#main -->
 
-    <div id="footer">
+    <footer id="footer">
       <div class="grid-container">
         <?php print render($page['footer']); ?>
       </div>
-    </div> <!-- /#footer -->
+    </footer> <!-- /#footer -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
