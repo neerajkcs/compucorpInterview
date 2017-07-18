@@ -1,6 +1,6 @@
 .banner {
     background-size: cover;
-    padding: 50px 0;
+    padding: 100px 0 120px;
     text-align: center;
     position: relative;
     color: #fff;
@@ -63,9 +63,18 @@
         border-radius: 100%;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        background-clip: content-box;
 
         &.bulb {
             background-image: url('../../images/icon-bulb.png');
+        }
+
+        &.users {
+            background-image: url('../../images/icon-users.png');
+        }
+
+        &.thumb {
+            background-image: url('../../images/icon-thumb-o-up.png');
         }
     }
 
