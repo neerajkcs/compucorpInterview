@@ -117,12 +117,12 @@
     </div></header> <!-- /.container, /#header -->
 
     <?php if ($page['banner']): ?><section id="banner"><?php print render($page['banner']); ?></section><?php endif; ?>
-	<div class="grid-container">
+	
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb"><div class="grid-container"><?php print $breadcrumb; ?></div></div>
     <?php endif; ?>
     <?php print $messages; ?>
-	</div>
+	
     <main id="main" class="clearfix">
     <?php if ($page['content_top']): ?><div id="content-top"><?php print render($page['content_top']); ?></div><?php endif; ?>
       <div class="grid-container">

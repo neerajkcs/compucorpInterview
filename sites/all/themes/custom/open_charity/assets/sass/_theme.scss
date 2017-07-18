@@ -1,105 +1,253 @@
-.mt0 {
-	margin-top: 0px;
+/**** Utility classes ****/
+/* Ex.: 'mt20' uses 'margin-top: 20', 'mb20' uses 'margin-bottom: 20', 'pv20' uses 'padding-top & padding-bottom 20' */
+
+$utimp: 0;
+
+@while $utimp < 51 {
+    .mt#{$utimp} {
+        margin-top: #{$utimp}px;
+    }
+    
+    .mb#{$utimp} {
+        margin-bottom: #{$utimp}px;
+    }
+    
+    .pv#{$utimp} {
+        padding-bottom: #{$utimp}px;
+        padding-top: #{$utimp}px;
+    }
+    
+    $utimp: $utimp + 5;
 }
 
-.mt5 {
-	margin-top: 5px;
+.text-center {
+	text-align: center;
 }
 
-.mt10 {
-	margin-top: 10px;
+.text-right {
+	text-align: right;
 }
 
-.mt15 {
-	margin-top: 15px;
+.text-uppercase {
+	text-transform: uppercase;
 }
 
-.mt20 {
-	margin-top: 20px;
+.text-lg {
+	font-size: 17px;
 }
 
-.mt25 {
-	margin-top: 25px;
+.text-color {
+	color: #5fc0c3;
 }
 
-.mt30 {
-	margin-top: 30px;
+.text-dark {
+	color: #575656;
 }
 
-.mb0 {
-	margin-bottom: 0px;
+.text-bold {
+	font-weight: bold;
 }
 
-.mb5 {
-	margin-bottom: 5px;
+.bg-gray {
+	background-color: #f1f2f5;
 }
 
-.mb10 {
-	margin-bottom: 10px;
+.btn {
+	background: #5fc0c3;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	padding: 0 20px;
+	display: inline-block;
 }
 
-.mb15 {
-	margin-bottom: 15px;
+.branding {
+	float: left;
+
+	& > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	a {
+		color: #5b5b5e;
+	}
 }
 
-.mb20 {
-	margin-bottom: 20px;
+a#logo {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
 }
 
-.mb25 {
-	margin-bottom: 25px;
+#site-name {
+	display: inline-block;
+	font-size: 20px;
 }
 
-.mb30 {
-	margin-bottom: 30px;
+#site-slogan {
+	display: inline-block;
+
 }
 
-.pv5 {
-	padding-top: 5px;
-	padding-bottom: 5px;
+.header__right {
+	text-align: right;
 }
 
-.pv10 {
-	padding-top: 10px;
-	padding-bottom: 10px;
+#navigation {
+	
+	ul.links {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		text-transform: uppercase;
+
+		+ ul.links {
+			margin-left: 30px;
+		}
+
+		li {
+			list-style: none;
+			float: left;
+			margin: 0 15px;
+
+			&.first {
+				margin-left: 0;
+			}
+
+			&.last {
+				margin-right: 0;
+			}
+		}
+
+		a {
+		    color: #575656;
+		    height: 40px;
+		    display: inline-block;
+		    line-height: 40px;
+		}
+	}
 }
 
-.pv15 {
-	padding-top: 15px;
+#footer {
+	.block {
+    	padding: 20px 0;
+
+    	+ .block {
+    		border-top: #4e525b 2px solid;
+    	}
+    }
+
+    a {
+		color: #5dc0c9;
+	}
+}
+
+.footer-social-icons {
+    font-size: 18px;
+
+    a {
+        margin: 0 8px;
+    }
+}
+
+#page-title {
+	color: #5fc0c3;
+	margin: 0 0 25px 0;
+}
+
+.not-front #main {
+	padding: 25px 0 50px;
+}
+
+.node-blog.node-teaser {
+	border-bottom: solid 1px #eeeeee;
 	padding-bottom: 15px;
 }
 
-.pv20 {
-	padding-top: 20px;
-	padding-bottom: 20px;
+.node-blog.node-teaser:last-child {
+	border: none;
 }
 
-.pv25 {
-	padding-top: 25px;
-	padding-bottom: 25px;
+ul.primary, ul.links.inline {
+	border: none;
+	margin: 20px 0 20px 0;
+	padding: 0;
+	white-space: normal;
 }
 
-.pv30 {
-	padding-top: 30px;
-	padding-bottom: 30px;
+ul.links.inline, ul.action-links {
+	display: block;
+	margin: 0;
+	padding: 15px 0;	
 }
 
-.pv35 {
-	padding-top: 35px;
-	padding-bottom: 35px;
+ul.primary, ul.links.inline, ul.action-links {
+	li {
+		display: inline-block;
+		padding: 0;
+
+		a {
+			background-color: transparent;
+		    border: solid 1px #5fc0c3;
+		    color: #5fc0c3;
+		    display: inline-block;
+		    font-size: 13px;
+		    height: auto;
+		    margin-right: 0.5em;
+		    padding: 8px 15px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+
+		    &:hover, &:focus {
+			    background-color: #5fc0c3;
+				border: solid 1px #5fc0c3;
+				color: #ffffff;
+		    }
+		}
+	}
 }
 
-.pv40 {
-	padding-top: 40px;
-	padding-bottom: 40px;
+#edit-cancel {
+	margin-left: 15px;
 }
 
-.pv45 {
-	padding-top: 45px;
-	padding-bottom: 45px;
+/************** FORM INPUT BUTTON STYLE ***********************/
+
+input.form-text, .form-textarea-wrapper textarea, select {
+    border: solid 1px #dddddd;
+    color: #5b6172;
+    height: 40px;
+    padding: 7px 10px;
+	max-width: 100%;
 }
 
-.pv50 {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.form-textarea-wrapper textarea {
+	height: auto;
+}
+
+input.form-submit {
+	background-color: transparent;
+	border: solid 1px #5fc0c3;
+	color: #5fc0c3;
+	display: inline-block;
+	font-size: 13px;
+	outline: none;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	max-width: 100%;
+
+	&:hover, &:focus {
+		background-color: #5fc0c3;
+		color: #ffffff;
+	}
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+.description {
+	padding: 5px 0 0 0; 
 }

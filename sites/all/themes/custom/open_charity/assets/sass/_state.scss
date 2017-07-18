@@ -1,0 +1,18 @@
+.btn {
+	&:hover, &:focus {
+		background-color: #565659;
+		color: #ffffff;
+	}
+
+	&.outline {
+		background: none;
+		color: #5fc0c3;
+		border: #5fc0c3 1px solid;
+	}
+
+	&.wide {
+		min-width: 208px;
+		padding: 0 10px;
+		text-align: center;
+	}
+}

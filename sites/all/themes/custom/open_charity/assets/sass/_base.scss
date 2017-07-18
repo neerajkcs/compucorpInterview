@@ -1,13 +1,18 @@
 /*! _base.scss */
 
 html {
+  font-size: 10px;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  color: #5b6172;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
   margin: 0;
+  padding: 0;
 }
 
 article,
@@ -20,20 +25,34 @@ section {
   display: block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-	font-size: 30px;
+  font-size: 3rem;
 }
 
 h2 {
-	font-size: 26px;
+  font-size: 2.6rem;
 }
 
 h3 {
-	font-size: 21px;
+  font-size: 2.1rem;
 }
 
 h4 {
-	font-size: 17px;
+  font-size: 1.7rem;
+}
+
+a {
+  color: #565659;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: #5fc0c3;
+    text-decoration: none;
+  }
 }
 
 hr {
