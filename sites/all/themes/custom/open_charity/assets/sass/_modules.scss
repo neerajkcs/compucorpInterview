@@ -175,12 +175,16 @@
             background: url(../../images/lr-arrows.png) no-repeat bottom left;
             right: -20px;
         }
-    }
 
-    .owl-controls.clickable .owl-buttons .disabled,
-    .owl-controls.clickable .owl-buttons .disabled:hover {
-        opacity: 0.2;
-        cursor: default;
+        @media screen and (max-width: 1170px) {
+            .owl-prev {
+                left: -10px;
+            }
+
+            .owl-next {
+                right: -10px;
+            }
+        }
     }
 }
 

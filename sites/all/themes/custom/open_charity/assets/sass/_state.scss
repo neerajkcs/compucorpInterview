@@ -16,3 +16,11 @@
 		text-align: center;
 	}
 }
+
+.blog-home {
+	.owl-controls.clickable .owl-buttons .disabled,
+    .owl-controls.clickable .owl-buttons .disabled:hover {
+        opacity: 0.2;
+        cursor: default;
+    }
+}
