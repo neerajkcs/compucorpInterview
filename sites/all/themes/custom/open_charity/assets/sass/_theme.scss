@@ -102,6 +102,7 @@ a#logo {
 		padding: 0;
 		display: inline-block;
 		text-transform: uppercase;
+		vertical-align: top;
 
 		+ ul.links {
 			margin-left: 30px;
@@ -132,7 +133,7 @@ a#logo {
 
 #footer {
 	.block {
-    	padding: 20px 0;
+    	padding: 23px 0;
 
     	+ .block {
     		border-top: #4e525b 2px solid;
