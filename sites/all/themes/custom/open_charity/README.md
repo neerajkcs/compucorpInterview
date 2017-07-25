@@ -1,6 +1,6 @@
 #Open Charity
 
-The Open Charity is a custom Drupal 7 theme.
+The Open Charity is a custom twelve grid Drupal 7 theme.
 
 FEATURES
 HTML5 -> Semantive HTML5 Markups were used.
